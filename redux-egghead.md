@@ -28,3 +28,11 @@ const counter  = (state = 0,action) => {
 }
 }
 ```
+
+
+### Redux store 
+* create store (takes in a reducer)
+* dispatch action 
+* subscribe (subscribes to change in states)
+* get state 
+
