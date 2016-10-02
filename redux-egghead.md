@@ -36,3 +36,20 @@ const counter  = (state = 0,action) => {
 * subscribe (subscribes to change in states)
 * get state 
 
+
+### Notes 
+* Don't use array.push method in a reducer, as that would modify original state (impure function). Use array.concat method while adding an item to state array (Avoid using mutating methods)
+* You can use deepFreeze library to check for any mutations 
+* Object.assign to assign objects in a reduce function (or) object spread method
+```
+Object.assign(destination,source, source ...)
+
+Example:
+Object.assign({},todo, {isCompleted:!todo.isCompleted}
+
+{...todo,
+ isCompleted:!todo.isCompleted
+}
+```
+
+
